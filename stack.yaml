@@ -1,0 +1,40 @@
+resolver: lts-7.19
+compiler: ghcjs-0.2.1.9007019_ghc-8.0.1
+compiler-check: match-exact
+
+setup-info:
+  ghcjs:
+    source:
+      ghcjs-0.2.1.9007019_ghc-8.0.1:
+        url: http://ghcjs.tolysz.org/ghc-8.0-2017-02-05-lts-7.19-9007019.tar.gz
+        sha1: d2cfc25f9cda32a25a87d9af68891b2186ee52f9
+
+packages:
+- '.'
+
+- location:
+    git: https://github.com/ghcjs/ghcjs-base.git
+    commit: 9d7f01bd3be3a4f044a8716f0a1538dc00b63e6d
+  extra-dep: true
+
+- location:
+    git: https://github.com/reflex-frp/reflex
+    commit: 0356ce5f715707fbb4f01f28cae5adb357f22aa5
+  extra-dep: true
+- location:
+    git: https://github.com/reflex-frp/reflex-dom
+    commit: 66b6d35773fcb337ab38ebce02c4b23baeae721e
+  extra-dep: true
+- location:
+    git: https://github.com/reflex-frp/reflex-dom-contrib
+    commit: df4138406a5489acd72cf6c9e88988f13da02b31
+  extra-dep: true
+
+
+extra-deps:
+- tz-0.1.2.0
+- dlist-0.7.1.2
+- ghcjs-dom-0.2.4.0
+- ref-tf-0.4.0.1
+- prim-uniq-0.1.0.1
+- zenc-0.1.1

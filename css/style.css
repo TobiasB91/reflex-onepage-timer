@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  margin, padding: 0;
+  color: #000;
+}
+  
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.container-green {
+  background-color: #03b425;
+}
+
+.container-yellow {
+  background-color: #d3d809;
+}
+
+.container-orange {
+  background-color: #d85709;
+}
+
+.container-red {
+  background-color: #c70707;
+}
+
+.timerText {
+  font-size: 148px;
+  letter-spacing: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.aButton {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.aButton a {
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+.aButton:hover {
+  cursor: pointer;
+}
