@@ -62,3 +62,16 @@ html, body {
 .aButton:hover {
   cursor: pointer;
 }
+
+.footer {
+  position: absolute;
+  font-size: 12px; 
+  bottom: 3px;
+  right: 3px;
+}
+
+.footer a {
+  text-decoration: none;
+  margin-left: 3px;
+  font-family: Arial;
+}

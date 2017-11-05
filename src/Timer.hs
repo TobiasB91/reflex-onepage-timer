@@ -35,15 +35,22 @@ timerWidget maxTime = do
 
   rec
     dClasses <- elDynClass "div" dClasses $ do
+
+      -- controls
       (eStart, ePause, eExpand) <- elClass "div" "controls" $ do
         eExpand <- aButton "Fullscreen" "fa fa-expand"
         performEvent_ $ liftJS toggleFullscreen <$ eExpand
         eStart <- aButton "Start" "fa fa-play"
         ePause <- aButton "Pause" "fa fa-pause"
         return (eStart, ePause, eExpand)
-      elClass "div" "footer" $
-        elAttr "a" ("href" =: "#") $
+
+      -- footer
+      elClass "div" "footer" $ do
+        elClass "i" "fa fa-github" blank
+        elAttr "a" ("href" =: "https://github.com/elbingobonito/reflex-onepage-timer") $
           text "Written in Haskell."
+
+      -- main div with timer text
       elClass "div" "main" $ do
         let dTimer = timer eStart ePause eTick
         dClasses <- fmap mkClasses <$> dTimer
