@@ -2,7 +2,7 @@ name:                timer
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/timer#readme
+homepage:            https://github.com/elbingobonito/reflex-onepage-timer#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Tobias Brandt
@@ -46,4 +46,4 @@ test-suite timer-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/timer
+  location: https://github.com/elbingobonito/reflex-onepage-timer
